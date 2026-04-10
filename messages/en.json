@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "LOCTITE Adhesive Solutions for Industrial Performance",
+      "description": "We support manufacturers and maintenance teams with trusted LOCTITE products for bonding, sealing, and threadlocking.",
+      "primaryCta": "Request a Quote",
+      "secondaryCta": "View Products"
+    },
+    "outstandingProducts": {
+      "title": "Featured LOCTITE Products",
+      "previous": "Previous product",
+      "next": "Next product",
+      "viewDetails": "View details"
+    }
+  },
+  "about": {
+    "metaTitle": "About | LOCTITE Vietnam",
+    "title": "About LOCTITE Solutions",
+    "description": "We deliver LOCTITE adhesive technologies that improve reliability, simplify maintenance, and increase production efficiency.",
+    "slogan": "Bond Strong. Seal Smart. Perform Better.",
+    "leaderSectionTitle": "Leadership",
+    "leaderName": "Nguyen Quang Kien",
+    "leaderRole": "Managing Director",
+    "leaderBio": "With more than 15 years in industrial technical solutions, he leads the team to deliver practical LOCTITE applications with stable quality and long-term customer value.",
+    "visionTitle": "Vision",
+    "visionText": "Become a trusted LOCTITE solution partner in Vietnam and regional markets, helping factories improve reliability and operational efficiency.",
+    "targetTitle": "Target",
+    "targetText": "Provide fast technical consultation, right product selection, and consistent after-sales support for every industrial customer."
+  },
+  "products": {
+    "list": {
+      "metaTitle": "Products | LOCTITE Vietnam",
+      "title": "Our LOCTITE Product Range",
+      "description": "Explore proven adhesive, sealant, and threadlocking solutions for industrial applications.",
+      "previousPage": "Previous",
+      "nextPage": "Next",
+      "pageLabel": "Page"
+    },
+    "card": {
+      "viewDetails": "View details"
+    },
+    "detail": {
+      "back": "Back to products",
+      "cta": "Contact Us"
+    }
+  },
+  "contact": {
+    "metaTitle": "Contact | LOCTITE Vietnam",
+    "title": "Contact Our Team",
+    "description": "Share your technical requirement and we will recommend suitable LOCTITE products for your application.",
+    "cta": "Request a Quote",
+    "companyNameLabel": "Company Name",
+    "companyName": "KIEN HOP FDE GLOBAL IMEXTRA CO., LTD",
+    "hanoiOfficeTitle": "HANOI OFFICE",
+    "hqOfficeTitle": "HONG KONG HEADQUARTER",
+    "addressLabel": "Address",
+    "telLabel": "Tel",
+    "faxLabel": "Fax",
+    "hotlineLabel": "Hotline",
+    "emailLabel": "Email",
+    "hanoiAddress": "Duong O Hamlet, Phong Khe Commune, Bac Ninh City, Bac Ninh Province, Vietnam",
+    "hanoiTel": "0084-241-3692689",
+    "hanoiFax": "0084-241-3692690",
+    "hanoiHotline": "0084 916 165 585",
+    "hanoiEmail": "sales@fde.vn",
+    "hqAddress": "FT7 2/F BLK Sheungshui Plaza, Sheungshui New Territories, Hong Kong.",
+    "hqTel": "00852 68733463",
+    "hqFax": "00852 26730078",
+    "hqHotline": "0086 139 2344 6845",
+    "hqEmail": "13923446845@139.com",
+    "mapTitle": "Hanoi Office Location",
+    "formTitle": "Send Us an Email",
+    "nameLabel": "Your Name",
+    "emailInputLabel": "Your Email",
+    "subjectLabel": "Subject",
+    "messageLabel": "Message",
+    "sendButton": "Send Email",
+    "defaultSubject": "Request for quotation",
+    "defaultMessage": "Hello FDE team,%0D%0A%0D%0APlease support us with your product proposal.%0D%0A%0D%0AThank you."
+  },
+  "footer": {
+    "tagline": "Trusted LOCTITE adhesive solutions for modern industry."
+  },
+  "floatingContact": {
+    "button": "Contact Us",
+    "panelTitle": "Contact",
+    "panelDescription": "Any question or need help? I am here for you. Get in touch in your favourite way.",
+    "contactName": "Nial Maxwell",
+    "contactRole": "Junior Sales Manager UK / Ireland",
+    "sendRequest": "Send request",
+    "callPrefix": "Call",
+    "close": "Close contact panel"
+  }
+}

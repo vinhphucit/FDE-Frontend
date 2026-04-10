@@ -1,0 +1,25 @@
+---
+description: UI and UX quality standards for a clean, modern, professional company website.
+alwaysApply: true
+---
+
+# UI and UX Quality
+
+- Target a clean, modern, professional SaaS/company look.
+- Use mobile-first responsive layout.
+- Maintain consistent spacing with Tailwind scale.
+- Build clear typography hierarchy for headings, body, and supporting text.
+- Keep strong visual hierarchy and clear content flow.
+- Use proper alignment and avoid cluttered layouts.
+
+# Interaction and Polish
+
+- Add subtle hover effects for interactive elements.
+- Use smooth transitions (for example `transition-all` with `duration-200`).
+- Keep interaction feedback consistent and unobtrusive.
+
+# Performance and SEO
+
+- Use Next.js `Image` component for images where appropriate.
+- Use semantic HTML structure.
+- Keep pages SEO-friendly with proper headings, metadata, and clean URLs.

@@ -1,0 +1,39 @@
+---
+description: Required project structure, route layout, product data model, and i18n rules.
+alwaysApply: true
+---
+
+# Project Structure
+
+- Keep pages inside `app/` using route-based locale structure:
+  - `app/[locale]/page.tsx`
+  - `app/[locale]/products`
+  - `app/[locale]/about`
+  - `app/[locale]/contact`
+  - product details at `app/[locale]/products/[slug]`
+- Keep reusable UI in `components/ui`.
+- Keep layout components in `components/layout` (for example Navbar and Footer).
+- Keep page sections in `components/sections` (for example Hero and ProductGrid).
+- Store static data in `data/*.json`.
+- Do not hardcode large content in components.
+- Do not change this structure unless explicitly requested.
+
+# Product Data Rules
+
+- Product display must be data-driven (JSON or CMS).
+- Product records must include:
+  - `name`
+  - `description`
+  - `image`
+  - `slug`
+- Reuse shared product card components for list/grid displays.
+
+# Internationalization Rules
+
+- Site must support multiple locales via `[locale]` routes (for example `/en`, `/vi`).
+- Do not hardcode user-facing text in components.
+- Store translations in:
+  - `messages/en.json`
+  - `messages/vi.json`
+- Use translation lookup pattern like `t('key')`.
+- Keep translation keys consistent and structured (for example `home.hero.title`, `products.list.title`).

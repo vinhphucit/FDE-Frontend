@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "home": "Trang chu",
+    "products": "San pham",
+    "about": "Gioi thieu",
+    "contact": "Lien he"
+  },
+  "home": {
+    "hero": {
+      "title": "Giải pháp keo dán LOCTITE cho hiệu suất công nghiệp",
+      "description": "Chúng tôi hỗ trợ nhà máy và đội ngũ bảo trì với sản phẩm LOCTITE đáng tin cậy cho dán kết, làm kín và khóa ren.",
+      "primaryCta": "Yeu cau bao gia",
+      "secondaryCta": "Xem san pham"
+    },
+    "outstandingProducts": {
+      "title": "Sản phẩm LOCTITE nổi bật",
+      "previous": "Sản phẩm trước",
+      "next": "Sản phẩm tiếp theo",
+      "viewDetails": "Xem chi tiết"
+    }
+  },
+  "about": {
+    "metaTitle": "Giới thiệu | LOCTITE Vietnam",
+    "title": "Về giải pháp LOCTITE",
+    "description": "Chúng tôi cung cấp công nghệ keo dán LOCTITE giúp tăng độ tin cậy, tối ưu bảo trì và nâng cao hiệu quả sản xuất.",
+    "slogan": "Dán chắc. Làm kín thông minh. Vận hành vượt trội.",
+    "leaderSectionTitle": "Ban lãnh đạo",
+    "leaderName": "Nguyễn Quang Kiên",
+    "leaderRole": "Giám đốc điều hành",
+    "leaderBio": "Với hơn 15 năm kinh nghiệm trong lĩnh vực giải pháp kỹ thuật công nghiệp, anh dẫn dắt đội ngũ cung cấp ứng dụng LOCTITE thực tiễn, ổn định chất lượng và giá trị bền vững.",
+    "visionTitle": "Tầm nhìn",
+    "visionText": "Trở thành đối tác giải pháp LOCTITE đáng tin cậy tại Việt Nam và khu vực, giúp nhà máy nâng cao độ tin cậy và hiệu quả vận hành.",
+    "targetTitle": "Mục tiêu",
+    "targetText": "Cung cấp tư vấn kỹ thuật nhanh, chọn đúng sản phẩm và duy trì hỗ trợ sau bán hàng nhất quán cho mọi khách hàng công nghiệp."
+  },
+  "products": {
+    "list": {
+      "metaTitle": "Sản phẩm | LOCTITE Vietnam",
+      "title": "Danh mục sản phẩm LOCTITE",
+      "description": "Khám phá các giải pháp keo dán, chất làm kín và khóa ren đã được chứng minh trong công nghiệp.",
+      "previousPage": "Trước",
+      "nextPage": "Tiếp",
+      "pageLabel": "Trang"
+    },
+    "card": {
+      "viewDetails": "Xem chi tiet"
+    },
+    "detail": {
+      "back": "Quay lai danh sach san pham",
+      "cta": "Lien he"
+    }
+  },
+  "contact": {
+    "metaTitle": "Liên hệ | LOCTITE Vietnam",
+    "title": "Liên hệ đội ngũ của chúng tôi",
+    "description": "Chia sẻ yêu cầu kỹ thuật của bạn và chúng tôi sẽ tư vấn sản phẩm LOCTITE phù hợp cho ứng dụng thực tế.",
+    "cta": "Yêu cầu báo giá",
+    "companyNameLabel": "Tên công ty",
+    "companyName": "KIEN HOP FDE GLOBAL IMEXTRA CO., LTD",
+    "hanoiOfficeTitle": "VĂN PHÒNG HÀ NỘI",
+    "hqOfficeTitle": "TRỤ SỞ HỒNG KÔNG",
+    "addressLabel": "Địa chỉ",
+    "telLabel": "Điện thoại",
+    "faxLabel": "Fax",
+    "hotlineLabel": "Hotline",
+    "emailLabel": "Email",
+    "hanoiAddress": "Thôn Dương Ổ, Xã Phong Khê, TP. Bắc Ninh, Tỉnh Bắc Ninh, Việt Nam",
+    "hanoiTel": "0084-241-3692689",
+    "hanoiFax": "0084-241-3692690",
+    "hanoiHotline": "0084 916 165 585",
+    "hanoiEmail": "sales@fde.vn",
+    "hqAddress": "FT7 2/F BLK Sheungshui Plaza, Sheungshui New Territories, Hong Kong.",
+    "hqTel": "00852 68733463",
+    "hqFax": "00852 26730078",
+    "hqHotline": "0086 139 2344 6845",
+    "hqEmail": "13923446845@139.com",
+    "mapTitle": "Vị trí văn phòng Hà Nội",
+    "formTitle": "Gửi email cho chúng tôi",
+    "nameLabel": "Họ và tên",
+    "emailInputLabel": "Email của bạn",
+    "subjectLabel": "Tiêu đề",
+    "messageLabel": "Nội dung",
+    "sendButton": "Gửi email",
+    "defaultSubject": "Yêu cầu báo giá",
+    "defaultMessage": "Xin chào đội ngũ FDE,%0D%0A%0D%0AXin vui lòng hỗ trợ tư vấn sản phẩm phù hợp cho chúng tôi.%0D%0A%0D%0AXin cảm ơn."
+  },
+  "footer": {
+    "tagline": "Giải pháp keo dán LOCTITE đáng tin cậy cho ngành công nghiệp hiện đại."
+  },
+  "floatingContact": {
+    "button": "Liên hệ",
+    "panelTitle": "Liên hệ",
+    "panelDescription": "Bạn cần hỗ trợ? Chúng tôi luôn sẵn sàng giúp bạn. Hãy kết nối theo cách thuận tiện nhất.",
+    "contactName": "Nial Maxwell",
+    "contactRole": "Junior Sales Manager UK / Ireland",
+    "sendRequest": "Gửi yêu cầu",
+    "callPrefix": "Gọi",
+    "close": "Đóng bảng liên hệ"
+  }
+}

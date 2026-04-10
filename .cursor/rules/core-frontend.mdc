@@ -1,0 +1,24 @@
+---
+description: Core frontend engineering constraints for this project.
+alwaysApply: true
+---
+
+# Core Frontend Standards
+
+- Build with Next.js App Router and TypeScript.
+- Use React functional components only.
+- Style with Tailwind CSS; avoid CSS modules unless necessary.
+- Prefer Next.js built-in features over custom alternatives.
+- Keep implementations simple; do not over-engineer.
+- Do not add unnecessary dependencies.
+- Implement only requested scope; do not change unrelated code.
+- Do not add backend, database, or API unless explicitly requested.
+- Prefer static JSON data for MVP use cases.
+
+# Code Quality
+
+- Keep components small, reusable, and maintainable.
+- Use clear, descriptive names.
+- Remove unused code and avoid dead paths.
+- Prefer composition over duplication.
+- Prefer readability over cleverness.
