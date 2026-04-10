@@ -1,6 +1,6 @@
 ## Business Requirements
 
-An MVP of a B2B industrial product website as a web application.
+An Website of a B2B industrial product website as a web application.
 
 The website represents a company similar to Loctite, specializing in:
 

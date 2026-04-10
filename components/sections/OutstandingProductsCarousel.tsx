@@ -74,14 +74,14 @@ export function OutstandingProductsCarousel({
 
   return (
     <section className="space-y-6">
-      <div className="mb-6 flex items-center justify-between">
+      <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold text-slate-900">{labels.title}</h2>
         <div className="flex items-center gap-2">
           <button
             type="button"
             onClick={goPrevious}
             aria-label={labels.previous}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition-all duration-200 hover:border-brand-500 hover:text-brand-600"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-700 transition-all duration-200 hover:border-brand-500 hover:text-brand-600"
           >
             ←
           </button>
@@ -89,7 +89,7 @@ export function OutstandingProductsCarousel({
             type="button"
             onClick={goNext}
             aria-label={labels.next}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 text-slate-700 transition-all duration-200 hover:border-brand-500 hover:text-brand-600"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-700 transition-all duration-200 hover:border-brand-500 hover:text-brand-600"
           >
             →
           </button>
@@ -103,14 +103,14 @@ export function OutstandingProductsCarousel({
         >
           {products.map((product) => (
             <article key={product.slug} className="w-full shrink-0 px-0.5 sm:px-1" style={{ flexBasis: `${100 / itemsPerView}%` }}>
-              <div className="h-full rounded-xl border border-slate-200 bg-white p-4">
+              <div className="h-full rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md">
                 <Link href={`/${locale}/products/${product.slug}`} className="block overflow-hidden rounded-xl">
                   <Image
                     src={product.image}
                     alt={product.name}
                     width={1200}
                     height={700}
-                    className="h-56 w-full object-cover xl:h-64"
+                    className="h-56 w-full object-cover transition-transform duration-300 hover:scale-[1.02] xl:h-64"
                   />
                 </Link>
                 <div className="mt-4 flex flex-col justify-center">
@@ -119,7 +119,7 @@ export function OutstandingProductsCarousel({
                   <div className="mt-6">
                     <Link
                       href={`/${locale}/products/${product.slug}`}
-                      className="inline-flex rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-brand-700"
+                      className="inline-flex rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700"
                     >
                       {labels.viewDetails}
                     </Link>

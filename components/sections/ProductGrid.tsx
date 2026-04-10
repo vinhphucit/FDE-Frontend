@@ -10,7 +10,7 @@ type ProductGridProps = {
 
 export function ProductGrid({ locale, products, t }: ProductGridProps) {
   return (
-    <section className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <section className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
       {products.map((product) => (
         <ProductCard key={product.slug} locale={locale} product={product} t={t} />
       ))}

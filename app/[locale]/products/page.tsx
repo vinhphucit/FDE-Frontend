@@ -58,11 +58,11 @@ export default async function ProductsPage({ params, searchParams }: ProductsPag
   return (
     <section className="space-y-8">
       <div className="space-y-3">
-        <h1 className="text-3xl font-bold text-slate-900">{t("products.list.title")}</h1>
-        <p className="text-base text-slate-600">{t("products.list.description")}</p>
+        <h1 className="text-4xl font-bold text-slate-900">{t("products.list.title")}</h1>
+        <p className="max-w-4xl text-base leading-7 text-slate-600">{t("products.list.description")}</p>
       </div>
       <ProductGrid locale={locale} products={pageProducts} t={t} />
-      <div className="flex items-center justify-center gap-2 px-4 py-3">
+      <div className="flex items-center justify-center gap-2 px-4 py-4">
         <Link
           href={`/${locale}/products?page=${Math.max(1, currentPage - 1)}`}
           aria-label={t("products.list.previousPage")}
@@ -85,7 +85,7 @@ export default async function ProductsPage({ params, searchParams }: ProductsPag
               href={`/${locale}/products?page=${item}`}
               className={`inline-flex h-9 min-w-9 items-center justify-center border-b-2 px-2 text-sm font-semibold transition-all duration-200 ${
                 item === currentPage
-                  ? "border-slate-900 text-slate-900"
+                  ? "border-brand-600 text-brand-700"
                   : "border-transparent text-slate-500 hover:text-brand-700"
               }`}
             >

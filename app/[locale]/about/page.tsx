@@ -29,7 +29,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
 
   return (
     <section className="space-y-8">
-      <div className="relative overflow-hidden rounded-2xl shadow-sm">
+      <div className="relative overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1580894894513-541e068a3e2b?auto=format&fit=crop&w=2200&q=80')] bg-cover bg-center" />
         <div className="absolute inset-0 bg-slate-900/45" />
         <div className="relative flex min-h-[460px] flex-col items-center justify-center px-6 py-16 text-center sm:px-10 sm:py-20 md:min-h-[540px] md:py-24">
@@ -44,7 +44,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
       <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
         <h3 className="text-xl font-bold text-slate-900">{t("about.leaderSectionTitle")}</h3>
         <div className="mt-5 grid gap-6 md:grid-cols-2">
-          <div className="overflow-hidden rounded-xl">
+          <div className="overflow-hidden rounded-xl shadow-sm">
             <Image
               src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80"
               alt={t("about.leaderName")}

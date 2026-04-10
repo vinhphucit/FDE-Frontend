@@ -59,7 +59,7 @@ export function FloatingContact({ labels, phoneNumber, email }: FloatingContactP
   return (
     <div ref={wrapperRef} className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
       {open ? (
-        <div className="w-[340px] rounded-lg border border-slate-300 bg-white p-6 shadow-xl sm:w-[360px]">
+        <div className="w-[340px] rounded-xl border border-slate-200 bg-white p-6 shadow-2xl sm:w-[360px]">
           <div className="flex items-start justify-between">
             <h3 className="text-3xl font-bold tracking-tight text-slate-900">{labels.panelTitle}</h3>
             <button
@@ -91,14 +91,14 @@ export function FloatingContact({ labels, phoneNumber, email }: FloatingContactP
           <div className="mt-5 grid gap-2">
             <Link
               href={`mailto:${email}`}
-              className="inline-flex items-center justify-center gap-2 rounded-sm border border-slate-400 px-4 py-3 text-base font-semibold text-slate-800 transition-all duration-200 hover:bg-slate-50"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 px-4 py-3 text-base font-semibold text-slate-800 transition-all duration-200 hover:border-brand-300 hover:bg-slate-50"
             >
               <MailIcon />
               {labels.sendRequest}
             </Link>
             <Link
               href={`tel:${normalizedPhone}`}
-              className="inline-flex items-center justify-center gap-2 rounded-sm border border-slate-400 px-4 py-3 text-base font-semibold text-slate-800 transition-all duration-200 hover:bg-slate-50"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 px-4 py-3 text-base font-semibold text-slate-800 transition-all duration-200 hover:border-brand-300 hover:bg-slate-50"
             >
               <PhoneIcon />
               {labels.callPrefix} {phoneNumber}
@@ -109,7 +109,7 @@ export function FloatingContact({ labels, phoneNumber, email }: FloatingContactP
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
-        className="inline-flex items-center gap-2.5 rounded-full bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg transition-all duration-200 hover:bg-brand-700"
+        className="inline-flex items-center gap-2.5 rounded-full bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-xl transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700"
       >
         <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
           <PhoneIcon />

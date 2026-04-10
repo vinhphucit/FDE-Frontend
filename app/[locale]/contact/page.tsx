@@ -29,12 +29,12 @@ export default async function ContactPage({ params }: ContactPageProps) {
 
   return (
     <section className="space-y-8">
-      <div className="relative overflow-hidden rounded-2xl shadow-sm">
+      <div className="relative overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2200&q=80')] bg-cover bg-center" />
         <div className="absolute inset-0 bg-slate-900/40" />
         <div className="relative px-6 py-10 sm:px-10 sm:py-12">
-          <h1 className="text-4xl font-bold text-white">{t("contact.title")}</h1>
-          <p className="mt-4 max-w-4xl text-xl leading-7 text-slate-100">{t("contact.description")}</p>
+          <h1 className="text-4xl font-bold text-white sm:text-5xl">{t("contact.title")}</h1>
+          <p className="mt-4 max-w-4xl text-lg leading-8 text-slate-100">{t("contact.description")}</p>
         </div>
       </div>
 
@@ -46,38 +46,38 @@ export default async function ContactPage({ params }: ContactPageProps) {
 
             <div className="mt-8 space-y-2">
               <h2 className="text-xl font-bold text-slate-900">{t("contact.hanoiOfficeTitle")}</h2>
-              <p className="text-sm text-slate-700">
+              <p className="text-sm leading-6 text-slate-700">
                 <span className="font-semibold">{t("contact.addressLabel")}:</span> {t("contact.hanoiAddress")}
               </p>
-              <p className="text-sm text-slate-700">
+              <p className="text-sm leading-6 text-slate-700">
                 <span className="font-semibold">{t("contact.telLabel")}:</span> {t("contact.hanoiTel")}
               </p>
-              <p className="text-sm text-slate-700">
+              <p className="text-sm leading-6 text-slate-700">
                 <span className="font-semibold">{t("contact.faxLabel")}:</span> {t("contact.hanoiFax")}
               </p>
-              <p className="text-sm text-slate-700">
+              <p className="text-sm leading-6 text-slate-700">
                 <span className="font-semibold">{t("contact.hotlineLabel")}:</span> {t("contact.hanoiHotline")}
               </p>
-              <p className="text-sm text-slate-700">
+              <p className="text-sm leading-6 text-slate-700">
                 <span className="font-semibold">{t("contact.emailLabel")}:</span> {t("contact.hanoiEmail")}
               </p>
             </div>
 
             <div className="mt-8 space-y-2">
               <h2 className="text-xl font-bold text-slate-900">{t("contact.hqOfficeTitle")}</h2>
-              <p className="text-sm text-slate-700">
+              <p className="text-sm leading-6 text-slate-700">
                 <span className="font-semibold">{t("contact.addressLabel")}:</span> {t("contact.hqAddress")}
               </p>
-              <p className="text-sm text-slate-700">
+              <p className="text-sm leading-6 text-slate-700">
                 <span className="font-semibold">{t("contact.telLabel")}:</span> {t("contact.hqTel")}
               </p>
-              <p className="text-sm text-slate-700">
+              <p className="text-sm leading-6 text-slate-700">
                 <span className="font-semibold">{t("contact.faxLabel")}:</span> {t("contact.hqFax")}
               </p>
-              <p className="text-sm text-slate-700">
+              <p className="text-sm leading-6 text-slate-700">
                 <span className="font-semibold">{t("contact.hotlineLabel")}:</span> {t("contact.hqHotline")}
               </p>
-              <p className="text-sm text-slate-700">
+              <p className="text-sm leading-6 text-slate-700">
                 <span className="font-semibold">{t("contact.emailLabel")}:</span> {t("contact.hqEmail")}
               </p>
             </div>

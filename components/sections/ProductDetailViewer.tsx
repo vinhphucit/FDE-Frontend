@@ -27,18 +27,18 @@ export function ProductDetailViewer({ locale, product, gallery, labels }: Produc
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
       <div className="grid gap-8 lg:grid-cols-2">
         <div className="space-y-5">
-          <h1 className="text-3xl font-bold text-slate-900">{product.name}</h1>
+          <h1 className="text-4xl font-bold text-slate-900">{product.name}</h1>
           <p className="text-base leading-7 text-slate-600">{product.description}</p>
           <Link
             href={`/${locale}/contact`}
-            className="inline-flex rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-brand-700"
+            className="inline-flex rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700"
           >
             {labels.cta}
           </Link>
         </div>
 
         <div className="space-y-4">
-          <div className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
+          <div className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50 shadow-sm">
             <Image
               src={selectedImage}
               alt={product.name}
@@ -56,7 +56,7 @@ export function ProductDetailViewer({ locale, product, gallery, labels }: Produc
                   type="button"
                   onClick={() => setSelectedImage(imageUrl)}
                   className={`overflow-hidden rounded-lg border-2 transition-all duration-200 ${
-                    isSelected ? "border-brand-600 ring-2 ring-brand-100" : "border-slate-200 hover:border-brand-300"
+                    isSelected ? "border-brand-600 ring-2 ring-brand-100" : "border-slate-200 hover:border-brand-300 hover:shadow-sm"
                   }`}
                 >
                   <Image

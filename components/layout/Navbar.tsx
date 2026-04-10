@@ -19,8 +19,7 @@ type NavbarProps = {
 export function Navbar({ locale, labels }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
-  const baseLinkClass =
-    "text-base font-medium transition-all duration-200";
+  const baseLinkClass = "text-base font-medium transition-all duration-200";
   const inactiveLinkClass = "text-slate-700 hover:text-brand-600";
   const activeLinkClass = "text-brand-600";
   const otherLocale: Locale = locale === "en" ? "vi" : "en";
@@ -40,24 +39,33 @@ export function Navbar({ locale, labels }: NavbarProps) {
   };
 
   return (
-    <header className="border-b border-slate-200 bg-white">
-      <nav className="mx-auto w-full max-w-[1600px] px-4 py-4 sm:px-6 lg:px-10">
+    <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur">
+      <nav className="mx-auto w-full max-w-[1600px] px-4 py-3 sm:px-6 lg:px-10">
         <div className="flex items-center justify-between md:hidden">
           <Link href={`/${locale}`} className="inline-flex items-center">
             <Image src="/logo.svg" alt="LOCTITE Vietnam" width={160} height={40} priority />
           </Link>
-          <button
-            type="button"
-            onClick={() => setMobileOpen((prev) => !prev)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-slate-300 text-slate-700 transition-all duration-200 hover:border-brand-500 hover:text-brand-600"
-            aria-label="Toggle navigation menu"
-          >
-            {mobileOpen ? "✕" : "☰"}
-          </button>
+          <div className="flex items-center gap-2.5">
+            <Link
+              href={switchedPath}
+              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-semibold text-slate-700 transition-all duration-200 hover:border-brand-500 hover:text-brand-600"
+            >
+              <span aria-hidden="true">{otherLocaleFlag}</span>
+              {otherLocale.toUpperCase()}
+            </Link>
+            <button
+              type="button"
+              onClick={() => setMobileOpen((prev) => !prev)}
+              className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-300 bg-white text-slate-700 transition-all duration-200 hover:border-brand-500 hover:text-brand-600"
+              aria-label="Toggle navigation menu"
+            >
+              {mobileOpen ? "✕" : "☰"}
+            </button>
+          </div>
         </div>
 
         {mobileOpen ? (
-          <div className="mt-4 space-y-3 rounded-xl border border-slate-200 bg-white p-4 md:hidden">
+          <div className="mt-4 space-y-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm md:hidden">
             <Link
               href={homePath}
               onClick={() => setMobileOpen(false)}
@@ -86,14 +94,6 @@ export function Navbar({ locale, labels }: NavbarProps) {
             >
               {labels.contact}
             </Link>
-            <Link
-              href={switchedPath}
-              onClick={() => setMobileOpen(false)}
-              className="inline-flex items-center gap-2 rounded-md border border-slate-300 px-3.5 py-2 text-sm font-semibold text-slate-700 transition-all duration-200 hover:border-brand-500 hover:text-brand-600"
-            >
-              <span aria-hidden="true">{otherLocaleFlag}</span>
-              {otherLocale.toUpperCase()}
-            </Link>
           </div>
         ) : null}
 
@@ -101,28 +101,28 @@ export function Navbar({ locale, labels }: NavbarProps) {
           <Link href={`/${locale}`} className="inline-flex items-center">
             <Image src="/logo.svg" alt="LOCTITE Vietnam" width={180} height={44} priority />
           </Link>
-          <div className="flex items-center justify-center gap-8">
+          <div className="flex items-center justify-center gap-10">
             <Link
               href={homePath}
-              className={`${baseLinkClass} ${isActive(homePath) ? activeLinkClass : inactiveLinkClass}`}
+              className={`${baseLinkClass} ${isActive(homePath) ? `${activeLinkClass} border-b-2 border-brand-600 pb-1` : inactiveLinkClass}`}
             >
               {labels.home}
             </Link>
             <Link
               href={productsPath}
-              className={`${baseLinkClass} ${isActive(productsPath) ? activeLinkClass : inactiveLinkClass}`}
+              className={`${baseLinkClass} ${isActive(productsPath) ? `${activeLinkClass} border-b-2 border-brand-600 pb-1` : inactiveLinkClass}`}
             >
               {labels.products}
             </Link>
             <Link
               href={aboutPath}
-              className={`${baseLinkClass} ${isActive(aboutPath) ? activeLinkClass : inactiveLinkClass}`}
+              className={`${baseLinkClass} ${isActive(aboutPath) ? `${activeLinkClass} border-b-2 border-brand-600 pb-1` : inactiveLinkClass}`}
             >
               {labels.about}
             </Link>
             <Link
               href={contactPath}
-              className={`${baseLinkClass} ${isActive(contactPath) ? activeLinkClass : inactiveLinkClass}`}
+              className={`${baseLinkClass} ${isActive(contactPath) ? `${activeLinkClass} border-b-2 border-brand-600 pb-1` : inactiveLinkClass}`}
             >
               {labels.contact}
             </Link>
@@ -130,7 +130,7 @@ export function Navbar({ locale, labels }: NavbarProps) {
           <div className="flex justify-end">
             <Link
               href={switchedPath}
-              className="inline-flex items-center gap-2 rounded-md border border-slate-300 px-3.5 py-2 text-sm font-semibold text-slate-700 transition-all duration-200 hover:border-brand-500 hover:text-brand-600"
+              className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-3.5 py-2 text-sm font-semibold text-slate-700 transition-all duration-200 hover:border-brand-500 hover:text-brand-600"
             >
               <span aria-hidden="true">{otherLocaleFlag}</span>
               {otherLocale.toUpperCase()}

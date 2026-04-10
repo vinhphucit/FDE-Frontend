@@ -18,15 +18,15 @@ export function ProductCard({ locale, product, t }: ProductCardProps) {
           alt={product.name}
           width={800}
           height={500}
-          className="h-48 w-full object-cover"
+          className="h-52 w-full object-cover transition-transform duration-300 hover:scale-[1.02]"
         />
       </Link>
-      <div className="space-y-3 p-5">
-        <h3 className="text-lg font-semibold text-slate-900">{product.name}</h3>
-        <p className="text-sm leading-6 text-slate-600">{product.description}</p>
+      <div className="space-y-3 p-6">
+        <h3 className="text-xl font-semibold text-slate-900">{product.name}</h3>
+        <p className="text-sm leading-7 text-slate-600">{product.description}</p>
         <Link
           href={`/${locale}/products/${product.slug}`}
-          className="inline-flex text-sm font-medium text-brand-600 hover:text-brand-700"
+          className="inline-flex text-sm font-semibold text-brand-600 hover:text-brand-700"
         >
           {t("products.card.viewDetails")}
         </Link>

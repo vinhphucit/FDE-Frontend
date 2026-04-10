@@ -39,7 +39,7 @@ export function ContactEmailForm({ labels }: ContactEmailFormProps) {
             required
             value={name}
             onChange={(event) => setName(event.target.value)}
-            className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm outline-none transition-all duration-200 focus:border-brand-500"
+            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none transition-all duration-200 focus:border-brand-500"
           />
         </div>
         <div className="space-y-2">
@@ -49,7 +49,7 @@ export function ContactEmailForm({ labels }: ContactEmailFormProps) {
             type="email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
-            className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm outline-none transition-all duration-200 focus:border-brand-500"
+            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none transition-all duration-200 focus:border-brand-500"
           />
         </div>
         <div className="space-y-2">
@@ -58,7 +58,7 @@ export function ContactEmailForm({ labels }: ContactEmailFormProps) {
             required
             value={subject}
             onChange={(event) => setSubject(event.target.value)}
-            className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm outline-none transition-all duration-200 focus:border-brand-500"
+            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none transition-all duration-200 focus:border-brand-500"
           />
         </div>
         <div className="space-y-2">
@@ -68,12 +68,12 @@ export function ContactEmailForm({ labels }: ContactEmailFormProps) {
             rows={6}
             value={message}
             onChange={(event) => setMessage(event.target.value)}
-            className="w-full rounded-lg border border-slate-300 px-3 py-2.5 text-sm outline-none transition-all duration-200 focus:border-brand-500"
+            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm outline-none transition-all duration-200 focus:border-brand-500"
           />
         </div>
         <button
           type="submit"
-          className="inline-flex rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-brand-700"
+          className="inline-flex rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700"
         >
           {labels.sendButton}
         </button>
