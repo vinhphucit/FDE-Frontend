@@ -109,9 +109,9 @@ export function FloatingContact({ labels, phoneNumber, email }: FloatingContactP
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
-        className="inline-flex items-center gap-3 rounded-full bg-brand-600 px-8 py-5 text-lg font-semibold text-white shadow-lg transition-all duration-200 hover:bg-brand-700"
+        className="inline-flex items-center gap-2.5 rounded-full bg-brand-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg transition-all duration-200 hover:bg-brand-700"
       >
-        <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/20">
+        <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
           <PhoneIcon />
         </span>
         {labels.button}
