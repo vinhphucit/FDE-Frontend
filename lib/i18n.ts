@@ -4,7 +4,9 @@ import viMessages from "@/messages/vi.json";
 export const locales = ["en", "vi"] as const;
 export type Locale = (typeof locales)[number];
 
-type MessageTree = Record<string, string | MessageTree>;
+interface MessageTree {
+  [key: string]: string | MessageTree;
+}
 
 const dictionaries: Record<Locale, MessageTree> = {
   en: enMessages,
